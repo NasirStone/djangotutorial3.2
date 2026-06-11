@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import django; import os; print\\(os.path.dirname\\(django.__file__\\)\\)\")",
+      "Bash(python -c \"import django; import os; print\\(os.path.dirname\\(django.__file__\\)\\)\")",
+      "Bash(pip show *)",
+      "Read(//usr/**)",
+      "Bash(grep \"site-packages/django$\")",
+      "Bash(find /usr /opt ~/.local /Library/Python -name \"django\" -type d 2>/dev/null | grep \"site-packages/django$\" | head -5; ls /Users/nasirsims/code/mysite/)",
+      "Read(//opt/**)",
+      "Bash(python3.11 -c \"import django; import os; print\\(os.path.dirname\\(django.__file__\\)\\)\")",
+      "Bash(pip3 show *)",
+      "Bash(find /opt /usr/local /Users/nasirsims -name \"base_site.html\" 2>/dev/null | head -10)",
+      "Read(//Users/nasirsims/**)"
+    ]
+  }
+}
